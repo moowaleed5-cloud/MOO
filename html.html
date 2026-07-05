@@ -1,479 +1,1319 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" dir="rtl" lang="ar"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Anwar Lebanon | أنوار لبنان - Modern Heritage</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-surface-variant": "#404944",
-                    "on-tertiary-fixed": "#191c1d",
-                    "inverse-surface": "#303030",
-                    "surface-dim": "#dcd9d9",
-                    "tertiary-fixed": "#e1e3e4",
-                    "on-tertiary-fixed-variant": "#454748",
-                    "outline-variant": "#bfc9c3",
-                    "primary-fixed-dim": "#95d3ba",
-                    "on-primary-container": "#80bea6",
-                    "surface-container-lowest": "#ffffff",
-                    "on-tertiary-container": "#b0b2b3",
-                    "error": "#ba1a1a",
-                    "surface": "#fcf9f8",
-                    "on-primary-fixed-variant": "#0b513d",
-                    "on-error-container": "#93000a",
-                    "primary-container": "#064e3b",
-                    "secondary": "#735c00",
-                    "on-secondary-container": "#745c00",
-                    "tertiary-container": "#424546",
-                    "outline": "#707974",
-                    "on-secondary": "#ffffff",
-                    "secondary-container": "#fed65b",
-                    "inverse-primary": "#95d3ba",
-                    "tertiary": "#2c2f30",
-                    "surface-container-low": "#f6f3f2",
-                    "on-surface": "#1b1c1c",
-                    "on-tertiary": "#ffffff",
-                    "secondary-fixed": "#ffe088",
-                    "surface-bright": "#fcf9f8",
-                    "on-secondary-fixed-variant": "#574500",
-                    "secondary-fixed-dim": "#e9c349",
-                    "background": "#fcf9f8",
-                    "on-primary": "#ffffff",
-                    "on-secondary-fixed": "#241a00",
-                    "primary": "#003527",
-                    "on-error": "#ffffff",
-                    "inverse-on-surface": "#f3f0f0",
-                    "error-container": "#ffdad6",
-                    "on-primary-fixed": "#002117",
-                    "surface-variant": "#e4e2e1",
-                    "on-background": "#1b1c1c",
-                    "surface-container-highest": "#e4e2e1",
-                    "surface-container": "#f0eded",
-                    "primary-fixed": "#b0f0d6",
-                    "surface-container-high": "#eae7e7",
-                    "tertiary-fixed-dim": "#c5c7c8",
-                    "surface-tint": "#2b6954",
-                    "gold-light": "#D4AF37"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "margin-mobile": "20px",
-                    "stack-lg": "48px",
-                    "gutter": "24px",
-                    "base": "8px",
-                    "stack-md": "24px",
-                    "stack-sm": "12px",
-                    "container-max": "1280px",
-                    "margin-desktop": "64px"
-            },
-            "fontFamily": {
-                    "label-md": ["Source Sans 3"],
-                    "label-sm": ["Source Sans 3"],
-                    "body-md": ["Source Sans 3"],
-                    "display-lg": ["EB Garamond"],
-                    "headline-md": ["EB Garamond"],
-                    "display-lg-mobile": ["EB Garamond"],
-                    "headline-sm": ["EB Garamond"],
-                    "body-lg": ["Source Sans 3"]
-            },
-            "fontSize": {
-                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
-                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
-                    "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
-                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
-            }
-          },
-        },
-      }
-    </script>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أنوار لبنان | مخبز ومطعم</title>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Cormorant+Garamond:wght@400;600;700&family=Cairo:wght@400;600;700;900&family=Tajawal:wght@300;400;500;700;800;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        .text-gold-gradient {
-            background: linear-gradient(to right, #D4AF37, #F1D483, #D4AF37);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .pattern-bg {
-            background-color: #fcf9f8;
-            background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-            background-attachment: fixed;
-            opacity: 0.05;
-        }
-    </style>
+
+/* ══════════════════════════════════════
+   GLOBAL RESET & VARS
+══════════════════════════════════════ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg:         #F5FAF7;
+  --espresso:   #003527;
+  --brown:      #0B513D;
+  --brown-mid:  #2E7D5B;
+  --gold:       #1F7A55;
+  --gold-light: #4CAF7D;
+  --border:     #D9E8E0;
+  /* menu vars */
+  --orange:   #2E7D5B;
+  --orange-l: #4CAF7D;
+  --orange-d: #145C40;
+  --m-brown:  #003527;
+  --m-brown-m:#3D6B58;
+  --m-brown-l:#6E8F7F;
+  --cream:    #F5FAF7;
+  --cream-d:  #E3EDE7;
+  --white:    #FFFFFF;
+  /* new hero (green/gold) vars */
+  --hero-green:       #003527;
+  --hero-green-light: #0B513D;
+  --hero-gold:        #8FE3C0;
+}
+
+html, body { height: 100%; }
+body {
+  font-family: 'Source Sans 3', 'Tajawal', 'Cairo', sans-serif;
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+/* ══════════════════════════════════════
+   PAGE SWITCHER
+══════════════════════════════════════ */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ══════════════════════════════════════
+   MAIN PAGE
+══════════════════════════════════════ */
+#page-main {
+  min-height: 100vh;
+  background: #EDE8DF;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 60px;
+  position: relative;
+}
+#page-main.active { display: flex; }
+
+.main-container {
+  width: 100%; max-width: 430px;
+  display: flex; flex-direction: column; align-items: center;
+  position: relative; z-index: 1;
+  opacity: 0; transition: opacity 0.6s ease;
+}
+.main-container.visible { opacity: 1; }
+
+/* ── Hero: food image fills top, fades into beige ── */
+.main-hero-section {
+  width: 100%; position: relative;
+  height: 78vw; max-height: 400px; min-height: 300px;
+  overflow: hidden; flex-shrink: 0;
+}
+.main-hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('https://i.ibb.co/TM96TBRZ/file-00000000ef6872438d08b552faeaf084.png');
+  background-size: cover; background-position: center top;
+  transform: scale(1.06); transition: transform 9s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.main-hero-section.loaded .main-hero-bg { transform: scale(1); }
+/* right-to-left fade (RTL): transparent near the image, deep green where the text sits */
+.main-hero-section::after {
+  content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background: linear-gradient(
+    to right,
+    rgba(0,53,39,0.08)  0%,
+    rgba(0,53,39,0.55) 45%,
+    rgba(0,53,39,0.90) 78%,
+    rgba(0,53,39,0.96) 100%
+  );
+}
+.main-hero-section { min-height: 540px; height: auto; max-height: none; }
+/* ── New hero content block: green/gold identity, right-aligned (RTL) ── */
+.hero-content-new {
+  position: absolute; z-index: 3; inset: 0;
+  display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end;
+  padding: 26px 22px 32px; text-align: right;
+}
+.hero-heading-new {
+  font-family: 'EB Garamond', serif; font-weight: 700; color: #FFFFFF;
+  font-size: clamp(30px, 8vw, 42px); line-height: 1.22; margin-bottom: 14px;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.25);
+}
+.hero-heading-new .accent-gold { color: var(--hero-gold); }
+.hero-desc-new {
+  font-family: 'Source Sans 3', sans-serif; font-size: 14px; line-height: 1.75;
+  color: rgba(255,255,255,0.90); margin-bottom: 22px; max-width: 360px;
+  border-right: 3px solid var(--hero-gold); padding-right: 14px;
+}
+.hero-btns-new { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; width: 100%; }
+.hero-btn-gold, .hero-btn-outline {
+  font-family: 'Source Sans 3', sans-serif; font-weight: 700; font-size: 14px;
+  padding: 13px 26px; border-radius: 10px; cursor: pointer; border: none;
+  transition: transform 0.2s, background 0.2s;
+}
+.hero-btn-gold { background: #FFFFFF; color: var(--hero-green); }
+.hero-btn-gold:active { transform: scale(0.96); background: #EAF6F0; }
+.hero-btn-outline {
+  background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.45);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
+.hero-btn-outline:active { background: rgba(255,255,255,0.2); transform: scale(0.96); }
+
+/* ── Top nav bar above the hero ── */
+.hero-nav {
+  width: 100%; max-width: 430px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px; background: rgba(255,255,255,0.96);
+  position: sticky; top: 0; z-index: 50;
+  box-shadow: 0 2px 14px rgba(0,53,39,0.06);
+}
+.hero-nav-left { display: flex; align-items: center; gap: 10px; }
+.hero-nav-hamburger {
+  width: 38px; height: 38px; border-radius: 10px; background: transparent; border: none;
+  display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--hero-green);
+}
+.hero-nav-order-btn {
+  background: var(--hero-green); color: #FFFFFF; font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700; font-size: 13px; padding: 9px 18px; border-radius: 8px;
+  text-decoration: none; white-space: nowrap; display: inline-block;
+}
+.hero-nav-order-btn:active { transform: scale(0.97); }
+.hero-nav-logo { font-family: 'EB Garamond', serif; font-weight: 700; font-size: 21px; color: var(--hero-green); }
+.hero-nav-dropdown {
+  max-height: 0; overflow: hidden; width: 100%; max-width: 430px;
+  background: #fff; transition: max-height 0.3s ease; position: relative; z-index: 49;
+}
+.hero-nav-dropdown.open { max-height: 240px; }
+.hero-nav-dropdown a {
+  display: block; padding: 13px 20px; font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px; font-weight: 600; color: var(--espresso); text-decoration: none;
+  border-top: 1px solid #EEE;
+}
+/* status badge sits inline at the top of the new hero content, glass pill kept from base style */
+.hero-content-new .status-badge { margin-bottom: 16px; margin-top: 0; }
+
+/* ── Identity block sits centered in hero (legacy, unused by new markup) ── */
+.main-hero-content {
+  position: absolute; z-index: 3;
+  top: 0; left: 0; right: 0;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 18px 20px 0;
+}
+.logo-name-block { display: flex; flex-direction: column; align-items: center; margin-bottom: 4px; position: relative; overflow: visible; }
+.logo-img {
+  width: 130px; height: 130px; object-fit: contain; margin-bottom: -6px;
+  filter: drop-shadow(0 6px 18px rgba(43,21,6,0.22));
+}
+.site-name {
+  font-family: 'Lalezar', cursive; font-size: 60px; font-weight: 400;
+  color: #003527; line-height: 1.0; text-align: center;
+  text-shadow: 0 2px 0 rgba(255,255,255,0.25), 0 4px 18px rgba(107,18,8,0.15);
+}
+.site-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px; letter-spacing: 7px; text-transform: uppercase;
+  color: #3D6B58; margin-top: 2px;
+}
+/* thin gold rule under subtitle */
+.site-subtitle::after {
+  content: '';
+  display: block; margin: 7px auto 0;
+  width: 60px; height: 1px;
+  background: linear-gradient(to right, transparent, #1F7A55, transparent);
+}
+
+/* ── Heritage row: ٤١ عاماً  +  SINCE 1985 stacked ── */
+.heritage-block {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 2px; margin-top: 8px; margin-bottom: 0;
+  position: relative; z-index: 2;
+}
+.heritage-text {
+  font-family: 'EB Garamond', 'Cairo', sans-serif; font-size: 15px; font-weight: 700;
+  color: #003527; letter-spacing: 0.3px;
+  display: flex; align-items: center; gap: 6px;
+}
+.heritage-text::before, .heritage-text::after {
+  content: '🌿'; font-size: 13px;
+}
+.heritage-since {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 5px; text-transform: uppercase;
+  color: #1F7A55;
+}
+.heritage-since::before, .heritage-since::after { content: ' ✦ '; font-size: 8px; }
+
+/* ── Status badge ── */
+.status-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 16px 7px 12px; border-radius: 30px;
+  font-size: 12px; font-weight: 700; border: 1px solid;
+  margin-top: 10px;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+.status-badge.open {
+  background: rgba(255,255,255,0.55);
+  border-color: rgba(40,160,80,0.25); color: #1A6A30;
+}
+.status-badge.closed {
+  background: rgba(255,255,255,0.45);
+  border-color: rgba(200,60,40,0.22); color: #902A1A;
+}
+.status-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.status-badge.open   .status-dot { background: #28A050; box-shadow: 0 0 6px rgba(40,160,80,0.7); animation: blink 2s infinite; }
+.status-badge.closed .status-dot { background: #C83C28; }
+
+/* ── Links ── */
+.links-section {
+  width: 100%; padding: 0 16px;
+  display: flex; flex-direction: column; gap: 10px;
+  margin-top: 20px;
+}
+.link-btn {
+  display: flex; align-items: center; gap: 14px; padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255,253,249,0.88);
+  border: 1px solid rgba(220,205,185,0.70);
+  box-shadow: 0 2px 12px rgba(43,21,6,0.06), 0 1px 0 rgba(255,255,255,0.9) inset;
+  text-decoration: none; cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.4,0,0.2,1);
+  position: relative; overflow: hidden;
+}
+.link-btn:active { transform: scale(0.98); }
+.link-btn::before {
+  content: ''; position: absolute; right: 0; top: 18%; bottom: 18%;
+  width: 3px; border-radius: 3px 0 0 3px; opacity: 0.7;
+}
+.btn-menu::before      { background: #1F7A55; }
+.btn-whatsapp::before  { background: #25D366; }
+.btn-talabat::before   { background: #FF6B35; }
+.btn-facebook::before  { background: #1877F2; }
+.btn-instagram::before { background: #E1306C; }
+.btn-tiktok::before    { background: #010101; }
+.btn-phone::before     { background: #7C4DFF; }
+.btn-share::before     { background: #1F7A55; }
+
+.btn-icon {
+  width: 46px; height: 46px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 20px;
+  transition: transform 0.2s;
+}
+.link-btn:active .btn-icon { transform: scale(0.94); }
+.btn-menu      .btn-icon { background: #E5F3EC; }
+.btn-whatsapp  .btn-icon { background: #E8F7EE; }
+.btn-talabat   .btn-icon { background: #FFF0EC; }
+.btn-facebook  .btn-icon { background: #EEF2FF; }
+.btn-instagram .btn-icon { background: #FFF0F5; }
+.btn-tiktok    .btn-icon { background: #F0F0F8; }
+.btn-phone     .btn-icon { background: #F5F0FF; }
+.btn-share     .btn-icon { background: #EAF6F0; }
+
+.btn-text { flex: 1; min-width: 0; }
+.btn-label {
+  display: block; font-size: 14px; font-weight: 800; color: #1A0A00;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.btn-sublabel {
+  display: block; font-size: 11px; font-weight: 500; color: #6A4828; margin-top: 2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.btn-arrow {
+  flex-shrink: 0; color: #C8B090;
+  display: flex; align-items: center;
+  transition: transform 0.2s, color 0.2s;
+}
+.link-btn:active .btn-arrow { color: #1F7A55; transform: translateX(-2px); }
+
+/* ── Map ── */
+.map-section {
+  width: calc(100% - 32px); margin: 20px 16px 0;
+  border-radius: 20px; overflow: hidden;
+  border: 1px solid rgba(220,205,185,0.6);
+  box-shadow: 0 4px 20px rgba(43,21,6,0.08);
+}
+.map-section iframe { width: 100%; height: 190px; display: block; border: none; }
+.map-nav-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; padding: 13px 16px; background: #003527;
+  color: #FFFFFF; font-family: 'Source Sans 3', 'Tajawal', sans-serif;
+  font-size: 14px; font-weight: 800; border: none; cursor: pointer;
+  text-decoration: none; transition: background 0.2s; letter-spacing: 0.5px;
+}
+.map-nav-btn:active { background: #4A2510; }
+
+/* ── Footer ── */
+.footer { margin-top: 28px; text-align: center; width: 100%; padding: 0 16px; }
+.footer-divider { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.footer-divider::before, .footer-divider::after {
+  content: ''; flex: 1; height: 1px; background: #D9E8E0;
+}
+.footer p { font-size: 10px; color: #3D6B58; letter-spacing: 2px; font-family: 'EB Garamond', 'Cormorant Garamond', serif; text-transform: uppercase; }
+
+/* ── Toast ── */
+.share-toast {
+  position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(16px);
+  background: #003527; color: #FFFFFF;
+  padding: 10px 22px; border-radius: 30px;
+  font-family: 'Source Sans 3', 'Tajawal', sans-serif; font-size: 13px; font-weight: 700;
+  z-index: 400; border: 1px solid rgba(31,122,85,0.35);
+  opacity: 0; transition: all 0.3s; pointer-events: none; white-space: nowrap;
+}
+.share-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ══════════════════════════════════════
+   MENU HOME VIEW
+══════════════════════════════════════ */
+#page-menu { background: var(--cream); min-height: 100vh; }
+
+.menu-view { display: none; flex-direction: column; min-height: 100vh; }
+.menu-view.active { display: flex; }
+
+.main-back-bar {
+  background: var(--m-brown);
+  padding: 10px 16px;
+  display: flex; align-items: center; flex-shrink: 0;
+}
+.main-back-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.22);
+  color: rgba(255,255,255,0.90); border-radius: 30px; padding: 6px 14px;
+  font-family: 'Source Sans 3', 'Tajawal', sans-serif; font-size: 13px; font-weight: 700;
+  cursor: pointer; transition: background .2s; border: none;
+}
+.main-back-btn:hover { background: rgba(255,255,255,0.22); }
+
+.menu-hero {
+  position: relative;
+  background-image: url('https://i.ibb.co/Wv9G1ypL/file-00000000edb4720a8d35b48caa71ad94.png');
+  background-size: cover; background-position: center top;
+  height: 56vw; max-height: 320px;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.menu-hero-title {
+  font-family: 'EB Garamond', 'Cairo', sans-serif; font-size: 54px; font-weight: 900;
+  color: var(--m-brown); line-height: 1; letter-spacing: -1px;
+  text-shadow: 0 2px 16px rgba(255,255,255,0.6); text-align: center;
+}
+.menu-hero-sub {
+  font-size: 13px; color: var(--m-brown-m); font-weight: 600;
+  display: flex; align-items: center; gap: 8px; margin-top: 4px; justify-content: center;
+}
+.menu-hero-sub::before, .menu-hero-sub::after { content: '—'; color: var(--orange); opacity: 0.7; }
+.menu-hero-ornament { color: var(--orange); font-size: 20px; margin-top: 6px; opacity: 0.8; text-align: center; }
+.menu-hero-logo { position: relative; z-index: 3; display: flex; flex-direction: column; align-items: center; }
+
+.home-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 14px; padding: 14px 16px 24px;
+  max-width: 560px; margin: 0 auto; width: 100%;
+}
+@keyframes cardIn { from { opacity:0; transform:translateY(40px); } to { opacity:1; transform:translateY(0); } }
+.cat-card { animation: cardIn 0.5s ease both; }
+.home-grid .cat-card:nth-child(1) { animation-delay: 0.05s; }
+.home-grid .cat-card:nth-child(2) { animation-delay: 0.15s; }
+.home-grid .cat-card:nth-child(3) { animation-delay: 0.25s; }
+.home-grid .cat-card:nth-child(4) { animation-delay: 0.35s; }
+.home-grid .cat-card:nth-child(5) { animation-delay: 0.45s; }
+
+.cat-card {
+  background: var(--white); border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,53,39,0.09);
+  cursor: pointer; transition: transform .25s, box-shadow .25s;
+}
+.cat-card:hover { transform: translateY(-5px); box-shadow: 0 14px 40px rgba(0,53,39,0.14); }
+.cat-card:active { transform: scale(0.97); }
+.cat-card.wide { grid-column: 1 / -1; }
+
+.cat-img-wrap { border-radius: 20px 20px 0 0; overflow: hidden; position: relative; aspect-ratio: 1/0.65; }
+.cat-card.wide .cat-img-wrap { aspect-ratio: 2.6/1; }
+.cat-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+.cat-card:hover .cat-img { transform: scale(1.07); }
+.cat-img-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,53,39,0.25) 0%, transparent 60%);
+}
+.cat-body { padding: 14px; text-align: center; }
+.cat-name { font-family: 'EB Garamond', 'Cairo', sans-serif; font-size: 16px; font-weight: 800; color: var(--m-brown); margin-bottom: 10px; line-height: 1.2; }
+.cat-meta { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
+.cat-arrow {
+  width: 30px; height: 30px; border-radius: 50%;
+  border: 1.5px solid var(--orange); color: var(--orange);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; flex-shrink: 0; transition: background .2s, color .2s;
+}
+.cat-card:hover .cat-arrow { background: var(--orange); color: white; }
+.cat-count {
+  font-size: 12px; color: var(--m-brown-m); flex: 1; text-align: center;
+  display: flex; align-items: center; justify-content: center; gap: 5px;
+}
+.cat-count::before, .cat-count::after { content: '—'; color: var(--orange-l); font-size: 10px; opacity: 0.7; }
+
+/* ══════════════════════════════════════
+   MENU INNER VIEW (PRODUCTS)
+══════════════════════════════════════ */
+.inner-header {
+  position: sticky; top: 0; z-index: 200; background: var(--white);
+  box-shadow: 0 2px 16px rgba(0,53,39,0.07);
+  padding: 14px 16px; display: flex; align-items: center; gap: 12px;
+}
+.inner-back-btn {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--cream-d); border: 1.5px solid var(--cream-d);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 17px; flex-shrink: 0;
+  transition: background .2s; color: var(--orange);
+}
+.inner-back-btn:hover { background: #DEC8AC; }
+.inner-title { font-family: 'EB Garamond', 'Cairo', sans-serif; font-size: 19px; font-weight: 800; color: var(--m-brown); flex: 1; }
+.inner-emoji { font-size: 22px; }
+
+.inner-banner-wrap { position: relative; overflow: hidden; height: 165px; }
+.inner-banner { width: 100%; height: 165px; object-fit: cover; display: block; }
+.inner-banner-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,53,39,0.55) 0%, transparent 60%);
+  display: flex; align-items: flex-end; padding: 16px 18px;
+}
+.banner-tag {
+  background: rgba(255,255,255,0.18); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.35); color: var(--white);
+  font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 20px;
+}
+
+.products-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 14px; padding: 18px 14px 40px;
+  max-width: 600px; margin: 0 auto; width: 100%;
+  background: var(--cream);
+}
+.prod-card {
+  background: var(--white); border-radius: 16px; overflow: hidden;
+  box-shadow: 0 3px 16px rgba(0,53,39,0.08);
+  display: flex; flex-direction: column;
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .4s ease, transform .4s ease, box-shadow .25s;
+}
+.prod-card.show { opacity: 1; transform: none; }
+.prod-card.show:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,53,39,0.13); }
+.prod-card.wide { grid-column: 1 / -1; flex-direction: row; align-items: stretch; }
+.prod-card.wide .prod-img-wrap { width: 140px; min-width: 140px; aspect-ratio: auto; flex-shrink: 0; }
+.prod-card.wide .prod-img { height: 100%; object-fit: cover; }
+.prod-card.wide .prod-body { flex: 1; padding: 12px 14px; }
+.prod-card.wide .prod-name { font-size: 15px; font-weight: 800; margin-bottom: 8px; }
+.prod-card.tall { grid-row: span 2; grid-column: 2; }
+.prod-card.tall .prod-img-wrap { aspect-ratio: 3/4; }
+
+.prod-img-wrap { position: relative; overflow: hidden; aspect-ratio: 4/3; }
+.prod-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+.prod-card:hover .prod-img { transform: scale(1.08); }
+.prod-badge {
+  position: absolute; top: 8px; right: 8px;
+  background: linear-gradient(135deg, var(--orange), var(--orange-l));
+  color: white; font-family: 'Source Sans 3', 'Cairo', sans-serif;
+  font-size: 12px; font-weight: 900; padding: 4px 9px; border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(31,122,85,0.4);
+}
+.prod-badge.no-price { background: linear-gradient(135deg, #999, #bbb); }
+.prod-body { padding: 10px 11px 12px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.prod-name { font-size: 13.5px; font-weight: 700; color: var(--m-brown); line-height: 1.35; margin-bottom: 6px; }
+.prod-note { font-size: 11px; color: var(--m-brown-l); margin-bottom: 4px; font-style: italic; }
+.prod-flavors { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
+.prod-flavor-chip {
+  background: var(--cream); border: 1px solid var(--cream-d);
+  color: var(--m-brown-m); font-size: 10.5px; padding: 2px 7px; border-radius: 8px;
+}
+.prod-sizes { display: flex; gap: 5px; margin-bottom: 6px; }
+.prod-size-chip {
+  background: linear-gradient(135deg, var(--orange-d), var(--orange));
+  color: white; font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 10px;
+}
+.prod-price-row { display: flex; align-items: center; justify-content: space-between; }
+.prod-price { font-family: 'Source Sans 3', 'Cairo', sans-serif; font-size: 15px; font-weight: 900; color: var(--orange); }
+.prod-price.dash { color: #bbb; font-size: 18px; letter-spacing: 1px; }
+.prod-currency { font-size: 10px; font-weight: 600; color: var(--m-brown-l); margin-right: 2px; }
+.prod-heart {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--cream); border: 1px solid var(--cream-d);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; cursor: pointer; transition: transform .2s;
+}
+.prod-heart:hover { transform: scale(1.2); }
+.manaesh-types { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+.manaesh-chip {
+  background: var(--cream); border: 1px solid var(--cream-d);
+  color: var(--m-brown-m); font-size: 11px; font-weight: 600;
+  padding: 3px 8px; border-radius: 10px; white-space: nowrap;
+}
+
+@keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0.35; } }
+@media(max-width:400px) {
+  .home-grid { gap: 12px; padding: 14px 12px 8px; }
+  .menu-hero { max-height: 260px; }
+  .menu-hero-title { font-size: 46px; }
+}
+
+/* ══════════════════════════════════════
+   FALLING LEAVES ANIMATION
+══════════════════════════════════════ */
+#leaves-canvas {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none; z-index: 9999;
+}
+
+/* ══════════════════════════════════════
+   PAGE LOAD ANIMATIONS
+══════════════════════════════════════ */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 2px 16px rgba(43,21,6,0.07), inset 0 1px 0 rgba(255,255,255,0.5); }
+  50%       { box-shadow: 0 4px 24px rgba(31,122,85,0.18), inset 0 1px 0 rgba(255,255,255,0.6); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes menuHeroFade {
+  from { opacity: 0; transform: scale(1.04); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes ornamentBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.8; }
+  50%       { transform: translateY(-5px); opacity: 1; }
+}
+
+/* Apply animations to main page elements */
+.main-container.visible .logo-img    { animation: scaleIn 0.6s cubic-bezier(0.34,1.56,0.64,1) both; }
+.main-container.visible .site-name   { animation: fadeSlideDown 0.55s ease 0.15s both; }
+.main-container.visible .site-subtitle { animation: fadeSlideDown 0.5s ease 0.25s both; }
+.main-container.visible .heritage-pill { animation: fadeSlideUp 0.5s ease 0.3s both; }
+.main-container.visible .status-badge { animation: scaleIn 0.45s ease 0.4s both; }
+.main-container.visible .links       { animation: fadeSlideUp 0.5s ease 0.45s both; }
+.main-container.visible .map-section { animation: fadeSlideUp 0.5s ease 0.55s both; }
+
+/* Stagger link buttons */
+.main-container.visible .link-btn:nth-child(1) { animation: fadeSlideUp 0.4s ease 0.5s both; }
+.main-container.visible .link-btn:nth-child(2) { animation: fadeSlideUp 0.4s ease 0.58s both; }
+.main-container.visible .link-btn:nth-child(3) { animation: fadeSlideUp 0.4s ease 0.66s both; }
+.main-container.visible .link-btn:nth-child(4) { animation: fadeSlideUp 0.4s ease 0.74s both; }
+.main-container.visible .link-btn:nth-child(5) { animation: fadeSlideUp 0.4s ease 0.82s both; }
+.main-container.visible .link-btn:nth-child(6) { animation: fadeSlideUp 0.4s ease 0.90s both; }
+.main-container.visible .link-btn:nth-child(7) { animation: fadeSlideUp 0.4s ease 0.98s both; }
+.main-container.visible .link-btn:nth-child(8) { animation: fadeSlideUp 0.4s ease 1.06s both; }
+
+/* Glow pulse on the menu button */
+.btn-menu { animation: glowPulse 3s ease-in-out 1.5s infinite; }
+
+/* ══ 1. (shimmer removed) ══ */
+
+/* ══ 2. LOGO bounce entrance ══ */
+@keyframes logoBounceIn {
+  0%   { opacity:0; transform: scale(0.5) rotate(-8deg); }
+  60%  { opacity:1; transform: scale(1.12) rotate(3deg); }
+  80%  { transform: scale(0.95) rotate(-1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+.main-container.visible .logo-img {
+  animation: logoBounceIn 0.85s cubic-bezier(0.34,1.56,0.64,1) both !important;
+}
+
+/* ══ 4. WAVE SEPARATOR ══ */
+.wave-separator {
+  width: 100%; overflow: hidden;
+  line-height: 0; margin-top: -2px;
+  position: relative; z-index: 2;
+}
+.wave-separator svg {
+  display: block; width: 100%; height: 28px;
+}
+@keyframes waveSway {
+  0%   { d: path("M0,14 C60,28 120,0 180,14 C240,28 300,0 360,14 C420,28 480,0 540,14 L540,28 L0,28 Z"); }
+  50%  { d: path("M0,14 C60,0 120,28 180,14 C240,0 300,28 360,14 C420,0 480,28 540,14 L540,28 L0,28 Z"); }
+  100% { d: path("M0,14 C60,28 120,0 180,14 C240,28 300,0 360,14 C420,28 480,0 540,14 L540,28 L0,28 Z"); }
+}
+.wave-path { animation: waveSway 3s ease-in-out infinite; }
+
+/* ══ 5. CARDS SWIPE-IN from right ══ */
+@keyframes swipeFromRight {
+  from { opacity:0; transform: translateX(80px); }
+  to   { opacity:1; transform: translateX(0); }
+}
+.main-container.visible .link-btn:nth-child(1) { animation: swipeFromRight 0.45s cubic-bezier(0.25,0.46,0.45,0.94) 0.5s both !important; }
+.main-container.visible .link-btn:nth-child(2) { animation: swipeFromRight 0.45s cubic-bezier(0.25,0.46,0.45,0.94) 0.62s both !important; }
+.main-container.visible .link-btn:nth-child(3) { animation: swipeFromRight 0.45s cubic-bezier(0.25,0.46,0.45,0.94) 0.74s both !important; }
+.main-container.visible .link-btn:nth-child(4) { animation: swipeFromRight 0.45s cubic-bezier(0.25,0.46,0.45,0.94) 0.86s both !important; }
+.main-container.visible .link-btn:nth-child(5) { animation: swipeFromRight 0.45s cubic-bezier(0.25,0.46,0.45,0.94) 0.98s both !important; }
+.main-container.visible .link-btn:nth-child(6) { animation: swipeFromRight 0.45s cubic-bezier(0.25,0.46,0.45,0.94) 1.10s both !important; }
+.main-container.visible .link-btn:nth-child(7) { animation: swipeFromRight 0.45s cubic-bezier(0.25,0.46,0.45,0.94) 1.22s both !important; }
+.main-container.visible .link-btn:nth-child(8) { animation: swipeFromRight 0.45s cubic-bezier(0.25,0.46,0.45,0.94) 1.34s both !important; }
+
+/* Menu hero entrance */
+.menu-view.active .menu-hero { animation: menuHeroFade 0.7s ease both; }
+.menu-view.active .menu-hero-sub { animation: fadeSlideUp 0.5s ease 0.2s both; }
+.menu-hero-ornament { animation: ornamentBounce 2.5s ease-in-out infinite; }
+
+/* Menu sub text style fix */
+.menu-hero-sub {
+  font-size: 20px !important;
+  font-family: 'EB Garamond', 'Cairo', sans-serif !important;
+  font-weight: 800 !important;
+  color: var(--m-brown) !important;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px rgba(255,255,255,0.7);
+}
+
+/* Cat cards enhanced entrance */
+.menu-view.active .cat-card { animation: fadeSlideUp 0.5s ease both; }
+.menu-view.active .cat-card:nth-child(1) { animation-delay: 0.1s; }
+.menu-view.active .cat-card:nth-child(2) { animation-delay: 0.18s; }
+.menu-view.active .cat-card:nth-child(3) { animation-delay: 0.26s; }
+.menu-view.active .cat-card:nth-child(4) { animation-delay: 0.34s; }
+.menu-view.active .cat-card:nth-child(5) { animation-delay: 0.42s; }
+
+/* Shimmer on cat card images on hover */
+.cat-card:hover .cat-img-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(31,122,85,0.0) 0%,
+    rgba(31,122,85,0.12) 50%,
+    rgba(31,122,85,0.0) 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 1.2s linear;
+}
+
+/* Inner view products entrance */
+#products-grid .prod-card {
+  opacity: 0; transform: translateY(22px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+#products-grid .prod-card.show {
+  opacity: 1; transform: translateY(0);
+}
+
+/* ── Skeleton / Image loading states ── */
+@keyframes skeletonPulse {
+  0%, 100% { background-color: #E3EDE7; }
+  50%       { background-color: #F5FAF7; }
+}
+.prod-img-wrap::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: #E3EDE7;
+  animation: skeletonPulse 1.4s ease-in-out infinite;
+  z-index: 0;
+  border-radius: inherit;
+}
+.prod-img-wrap .prod-img {
+  position: relative; z-index: 1;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.prod-img-wrap .prod-img.img-loaded {
+  opacity: 1;
+}
+.cat-img-wrap::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: #E3EDE7;
+  animation: skeletonPulse 1.4s ease-in-out infinite;
+  z-index: 0;
+}
+.cat-img-wrap .cat-img {
+  position: relative; z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.cat-img-wrap .cat-img.img-loaded {
+  opacity: 1;
+}
+.inner-banner-wrap::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: #4CAF7D;
+  opacity: 0.18;
+  animation: skeletonPulse 1.4s ease-in-out infinite;
+  z-index: 0;
+}
+.inner-banner {
+  position: relative; z-index: 1;
+  opacity: 0; transition: opacity 0.4s ease;
+}
+.inner-banner.img-loaded { opacity: 1; }
+
+</style>
 </head>
-<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-gold-light/20 shadow-sm h-20">
-<div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
-<div class="font-display-lg text-headline-sm text-primary flex items-center gap-2">
-<span class="font-bold tracking-tight">Anwar Lebanon</span>
-<span class="hidden md:block text-gold-light opacity-50">|</span>
-<span class="hidden md:block font-headline-sm">أنوار لبنان</span>
+<body>
+
+<div class="share-toast" id="shareToast">✅ تم نسخ الرابط!</div>
+
+<!-- ══════════════════════════════════════
+     MAIN PAGE
+══════════════════════════════════════ -->
+<div id="page-main" class="page active">
+  <div class="main-container" id="mainContainer">
+
+    <!-- ══ TOP NAV ══ -->
+    <div class="hero-nav">
+      <div class="hero-nav-left">
+        <button class="hero-nav-hamburger" onclick="toggleHeroMenu()" aria-label="القائمة">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <a class="hero-nav-order-btn" href="https://www.talabat.com/ar/uae/restaurant/788269/anwar-lebanon-bakery-and-sweets-qidfa?aid=3899" target="_blank">اطلب الآن</a>
+      </div>
+      <div class="hero-nav-logo">أنوار لبنان</div>
+    </div>
+    <div class="hero-nav-dropdown" id="heroNavDropdown">
+      <a href="#" onclick="showMenu();closeHeroMenu();return false;">قائمة الطعام</a>
+      <a href="https://wa.me/971507082056" target="_blank">واتساب</a>
+      <a href="tel:092442889">اتصل بنا</a>
+      <a href="#mapSection" onclick="closeHeroMenu()">موقعنا</a>
+    </div>
+
+    <!-- HERO: bakery photo with green fade, identity + CTA float on top -->
+    <div class="main-hero-section" id="mainHero">
+      <div class="main-hero-bg"></div>
+      <div class="hero-content-new">
+        <div id="statusBadge" class="status-badge">
+          <span class="status-dot"></span>
+          <span id="statusText"></span>
+        </div>
+        <h1 class="hero-heading-new">أنوار لبنان..<br><span class="accent-gold">فن الأصالة</span> منذ 1985</h1>
+        <p class="hero-desc-new">أكثر من 41 عاماً من الإبداع في عالم الحلويات والمخبوزات. نقدم لكم طعم التراث اللبناني العريق بلمسة عصرية فاخرة.</p>
+        <div class="hero-btns-new">
+          <button class="hero-btn-outline" onclick="document.querySelector('.links-section').scrollIntoView({behavior:'smooth'})">قصتنا</button>
+          <button class="hero-btn-gold" onclick="showMenu()">استكشف القائمة</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ WAVE SEPARATOR ══ -->
+    <div class="wave-separator">
+      <svg viewBox="0 0 540 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path class="wave-path" d="M0,14 C60,28 120,0 180,14 C240,28 300,0 360,14 C420,28 480,0 540,14 L540,28 L0,28 Z" fill="#EDE8DF"/>
+        <path d="M0,18 C80,8 160,24 240,18 C320,12 400,24 540,16 L540,28 L0,28 Z" fill="rgba(31,122,85,0.10)"/>
+      </svg>
+    </div>
+
+    <div class="links-section">
+
+      <div onclick="showMenu()" class="link-btn btn-menu">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#1F7A55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">قائمة الطعام</span>
+          <span class="btn-sublabel">اطلع على كل الأصناف والأسعار</span>
+        </div>
+        <span class="btn-arrow">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </span>
+      </div>
+
+      <a href="https://wa.me/971507082056" target="_blank" class="link-btn btn-whatsapp">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">اطلب عبر واتساب</span>
+          <span class="btn-sublabel">+971 50 708 2056</span>
+        </div>
+        <span class="btn-arrow"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+      </a>
+
+      <a href="https://www.talabat.com/ar/uae/restaurant/788269/anwar-lebanon-bakery-and-sweets-qidfa?aid=3899" target="_blank" class="link-btn btn-talabat">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#FF6B35" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">اطلب عبر طلبات</span>
+          <span class="btn-sublabel">توصيل سريع لبيتك</span>
+        </div>
+        <span class="btn-arrow"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+      </a>
+
+      <a href="https://www.facebook.com/share/1Ee7cBoCCr/" target="_blank" class="link-btn btn-facebook">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">Facebook</span>
+          <span class="btn-sublabel">تابعنا على فيسبوك</span>
+        </div>
+        <span class="btn-arrow"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+      </a>
+
+      <a href="https://www.instagram.com/anwarlebanon_bakery?igsh=MXRrbWsxZ3RvdzJzaw==" target="_blank" class="link-btn btn-instagram">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22">
+            <defs><linearGradient id="ig" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#f09433"/><stop offset="25%" style="stop-color:#e6683c"/><stop offset="50%" style="stop-color:#dc2743"/><stop offset="75%" style="stop-color:#cc2366"/><stop offset="100%" style="stop-color:#bc1888"/></linearGradient></defs>
+            <path fill="url(#ig)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">Instagram</span>
+          <span class="btn-sublabel">@anwarlebanon_bakery</span>
+        </div>
+        <span class="btn-arrow"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+      </a>
+
+      <a href="https://www.tiktok.com/@anwarlebanon?_r=1&_t=ZS-96f4ngj321M" target="_blank" class="link-btn btn-tiktok">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#010101"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.87a8.18 8.18 0 004.77 1.52V6.9a4.85 4.85 0 01-1-.21z"/></svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">TikTok</span>
+          <span class="btn-sublabel">@anwarlebanon</span>
+        </div>
+        <span class="btn-arrow"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+      </a>
+
+      <a href="tel:092442889" class="link-btn btn-phone">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#7C4DFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 011.04 1.22 2 2 0 013 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">اتصل بنا</span>
+          <span class="btn-sublabel">09 244 2889</span>
+        </div>
+        <span class="btn-arrow"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+      </a>
+
+      <div onclick="shareLink()" class="link-btn btn-share">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#1F7A55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        </div>
+        <div class="btn-text">
+          <span class="btn-label">مشاركة الصفحة</span>
+          <span class="btn-sublabel">انسخ رابط الصفحة وشاركه مع أصدقائك</span>
+        </div>
+        <span class="btn-arrow"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+      </div>
+
+    </div><!-- /links-section -->
+
+    <div class="map-section" id="mapSection">
+      <iframe src="https://maps.google.com/maps?q=دبا+الفجيرة+المهلب+مسجد+الشيخ+زايد&output=embed&z=15"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <a class="map-nav-btn" href="https://maps.app.goo.gl/GPSJAMsMM65J58gX7?g_st=ac" target="_blank">
+        📍 &nbsp;وجّهني للمكان
+      </a>
+    </div>
+
+    <div class="footer">
+      <div class="footer-divider"><span style="color:var(--border);font-size:11px;">✦</span></div>
+      <p>Anwar Lebanon &nbsp;·&nbsp; Bakery &amp; Sweets</p>
+    </div>
+
+  </div>
 </div>
-<div class="hidden md:flex items-center gap-stack-md">
-<a class="font-label-md text-label-md text-primary border-b-2 border-gold-light pb-1 transition-all" href="#home">الرئيسية</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#menu">القائمة</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#branches">فروعنا</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#story">عن أنوار لبنان</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#contact">اتصل بنا</a>
+
+<!-- ══════════════════════════════════════
+     MENU PAGE
+══════════════════════════════════════ -->
+<div id="page-menu" class="page">
+
+  <!-- MENU HOME VIEW -->
+  <div class="menu-view active" id="view-home">
+
+    <div class="main-back-bar">
+      <button class="main-back-btn" onclick="hideMenu()">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        رجوع للصفحة الرئيسية
+      </button>
+    </div>
+
+    <div class="menu-hero">
+    </div>
+
+    <div style="background:var(--cream);flex:1;">
+      <div class="home-grid">
+
+        <div class="cat-card" onclick="openCategory('oriental')">
+          <div class="cat-img-wrap">
+            <img class="cat-img" src="https://i.ibb.co/SDRmyqb2/f74c473db15d9fd47e73b3c2b036a0bf.jpg" alt="حلويات شرقية" loading="lazy"/>
+            <div class="cat-img-overlay"></div>
+          </div>
+          <div class="cat-body">
+            <div class="cat-name">الحلويات الشرقية</div>
+            <div class="cat-meta"><div class="cat-arrow">←</div><div class="cat-count">12 صنف</div></div>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="openCategory('western')">
+          <div class="cat-img-wrap">
+            <img class="cat-img" src="https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779780950169.jpg" alt="حلويات غربية" loading="lazy"/>
+            <div class="cat-img-overlay"></div>
+          </div>
+          <div class="cat-body">
+            <div class="cat-name">الحلويات الغربية</div>
+            <div class="cat-meta"><div class="cat-arrow">←</div><div class="cat-count">5 أصناف</div></div>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="openCategory('pastry')">
+          <div class="cat-img-wrap">
+            <img class="cat-img" src="https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/b5172deb3ad4c5f14079df067bb62d6c.jpg" alt="فطائر ومعجنات" loading="lazy"/>
+            <div class="cat-img-overlay"></div>
+          </div>
+          <div class="cat-body">
+            <div class="cat-name">فطائر ومعجنات</div>
+            <div class="cat-meta"><div class="cat-arrow">←</div><div class="cat-count">10 أصناف</div></div>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="openCategory('mixed')">
+          <div class="cat-img-wrap">
+            <img class="cat-img" src="https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782411715.jpg" alt="فطاير مشكل" loading="lazy"/>
+            <div class="cat-img-overlay"></div>
+          </div>
+          <div class="cat-body">
+            <div class="cat-name">فطاير مشكل</div>
+            <div class="cat-meta"><div class="cat-arrow">←</div><div class="cat-count">3 أصناف</div></div>
+          </div>
+        </div>
+
+        <div class="cat-card wide" onclick="openCategory('pizza')">
+          <div class="cat-img-wrap">
+            <img class="cat-img" src="https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/file_0000000046c072468e8ffdc10da83e64.png" alt="بيتزا" loading="lazy"/>
+            <div class="cat-img-overlay"></div>
+          </div>
+          <div class="cat-body">
+            <div class="cat-name">البيتزا</div>
+            <div class="cat-meta"><div class="cat-arrow">←</div><div class="cat-count">4 أصناف</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MENU INNER VIEW -->
+  <div class="menu-view" id="view-inner">
+    <div class="inner-header">
+      <div class="inner-back-btn" onclick="goHome()">→</div>
+      <span class="inner-emoji" id="inner-emoji">🍯</span>
+      <span class="inner-title" id="inner-title"></span>
+    </div>
+    <div class="inner-banner-wrap">
+      <img class="inner-banner" id="inner-banner" src="" alt=""/>
+      <div class="inner-banner-overlay">
+        <span class="banner-tag" id="inner-tag"></span>
+      </div>
+    </div>
+    <div class="products-grid" id="products-grid"></div>
+  </div>
+
 </div>
-<a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md hover:scale-105 transition-transform active:scale-95 shadow-lg" href="https://www.talabat.com/ar/uae/restaurant/788269/anwar-lebanon-bakery-and-sweets-qidfa?aid=3899" target="_blank">
-            اطلب الآن
-        </a>
-</div>
-</nav>
-<!-- Hero Section -->
-<section class="relative min-h-screen flex items-center overflow-hidden" id="home">
-<div class="absolute inset-0 z-0">
-<div class="w-full h-full bg-cover bg-center scale-105 hover:scale-100 transition-transform duration-10000" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgJjbAdPWCs2-dx1RT_LvB802m6u7WoeiwG-e5gx8Mq3rDZq10avTfceKid9xuxm8bw-ynOwHp1nDEK-auJjnN5Ra7AJwd5mO75h4J6CSHmtYgqomcn22uYvB8WzsOHGoyA97kkdlKx5crZljvtQ9SHLT6MfUzyJqgT6w3Pr-z63Md9Vl2Kp0aDZZE7wn8pdgHI1Spjr4tOyA64IMaSpe0cwr2m3ZfuaI3cgpDx8JqqfQ7c54wMYE2BX0EFE4xLNZ4aS-cYT_BSQ')"></div>
-<div class="absolute inset-0 bg-gradient-to-l from-primary/80 via-primary/40 to-transparent"></div>
-</div>
-<div class="container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-white">
-<div class="max-w-2xl reveal">
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
-                أنوار لبنان.. <br/>
-<span class="text-gold-light">فن الأصالة</span> منذ 1985
-            </h1>
-<p class="font-body-lg text-body-lg mb-8 text-surface-variant/90 border-r-4 border-gold-light pr-6">
-                أكثر من 41 عاماً من الإبداع في عالم الحلويات والمخبوزات. بدأت حكايتنا بشغف وانتقلت عبر الأجيال لنقدم لكم طعم التراث اللبناني العريق بلمسة عصرية فاخرة.
-            </p>
-<div class="flex flex-wrap gap-4">
-<a class="bg-gold-light text-primary px-8 py-4 rounded-lg font-label-md hover:bg-white transition-colors duration-300" href="#menu">استكشف القائمة</a>
-<a class="border border-white/30 backdrop-blur-md px-8 py-4 rounded-lg font-label-md hover:bg-white/10 transition-all duration-300" href="#story">قصتنا</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Our Story Section -->
-<section class="py-24 bg-surface relative overflow-hidden" id="story">
-<div class="pattern-bg absolute inset-0"></div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-<div class="grid md:grid-cols-12 gap-12 items-center">
-<div class="md:col-span-7 reveal">
-<div class="relative p-4 md:p-8">
-<div class="absolute inset-0 border-2 border-gold-light/30 -m-4 translate-x-4 translate-y-4"></div>
-<div class="w-full h-[500px] bg-cover bg-center shadow-2xl relative z-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWiV7BoRt2V-KHd0LCBGB_HB4adeIoLStwkNlBvMMTRNnQR4bSwDXAPv3wIKiIn9Ao2ZKOWfBkCB6rwqOibSzmBReOC3quM9reyAFkLBMcKqHBaILZbFdO5dSoUv5ynfdN13AY3DT_Y2KRINmsTvlEjrXCbqjn9RY-g7BTiyyzZu1WQr8Qyt5dN1Z6S73lWo2J4R-SE40eNP0DCiZB1XnT5Olr4GhqEiBnxmD9n5tWTcOt10WXIHB3Td61vQ2zN9YzLh318m_WlQ')"></div>
-</div>
-</div>
-<div class="md:col-span-5 reveal" style="transition-delay: 200ms">
-<span class="font-label-md text-gold-light tracking-widest block mb-4 uppercase">التراث والمسيرة</span>
-<h2 class="font-headline-md text-headline-md text-primary mb-6">قصتنا (Our Story)</h2>
-<div class="space-y-6 text-on-surface-variant leading-relaxed">
-<p class="font-body-lg">
-                        جذورنا ضاربة في أعماق لبنان، حيث ولدت أولى وصفاتنا في عام 1985. انتقلنا بهذا الإرث العظيم لنزدهر في دولة الإمارات العربية المتحدة، حاملين معنا سرّ المذاق الأصيل والالتزام بأعلى معايير الجودة.
-                    </p>
-<p class="font-body-md italic border-r-2 border-gold-light pr-4">
-                        "نحن لا نصنع الحلويات فقط، بل نصنع لحظات من السعادة مغلفة بالتقاليد."
-                    </p>
-<ul class="space-y-3 font-body-md">
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-gold-light">verified</span>
-                            مكونات طازجة ومختارة بعناية فائقة
-                        </li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-gold-light">verified</span>
-                            خبرة تمتد لأكثر من أربعة عقود
-                        </li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-gold-light">verified</span>
-                            مزيج فريد بين المذاق الشرقي والتقنيات الغربية
-                        </li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- The Menu Section -->
-<section class="py-24 bg-primary-container text-on-primary" id="menu">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="text-center mb-16 reveal">
-<h2 class="font-display-lg text-headline-md mb-4">قائمة الطعام (Our Menu)</h2>
-<div class="w-24 h-1 bg-gold-light mx-auto mb-6"></div>
-<p class="font-body-lg text-on-primary-container max-w-2xl mx-auto">
-                رحلة عبر المذاقات، من عبق الشرق إلى حداثة الغرب. استمتع بتشكيلتنا المختارة بعناية.
-            </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6 reveal" style="transition-delay: 100ms">
-<!-- Category 1 -->
-<div class="group relative overflow-hidden rounded-xl h-96 cursor-pointer">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBvyHiDrgqS2JcDW0HiJHFbFfjDxBdBOBUSbbaJ5UY25eNOElIVVlWHuhiDQut6CRZtdHSnpsXiw5Vc_X4VQ_VzPzDiYyX8xO-ifYHI3kLU4xMUVUolY8F8jLUzkzclV9vQf9XOMdPdymI4FLuy0fdSW-_bJrGnqqy9SOlhcF4vZ5NlSQiBiXMiPkTkfSP0tgCaw3UrVojK-GyklEDaRwQIXqDMIaCyugy4eVhAH8d1fu4O5dYvdf4x-llZEkY_SohWjchMWyOYJQ')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-0 p-6 w-full transform transition-transform group-hover:-translate-y-2">
-<h3 class="font-headline-sm text-white mb-2">الحلويات الشرقية</h3>
-<p class="text-sm text-gold-light opacity-0 group-hover:opacity-100 transition-opacity">أصالة المذاق اللبناني</p>
-</div>
-</div>
-<!-- Category 2 -->
-<div class="group relative overflow-hidden rounded-xl h-96 cursor-pointer">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7VZFol1uXsmoWwGwJViOvS0MOprnjAgh5RqlcmFgc32HcqUlvsdlMwIBJ88zgyk7Y4FrfNYTvLVr-UKh9HspThBgIt0eqKOQ8XW0t34sIIERLMgG5lNPz7WIQlYIcT1UbUeHIWq0V3HEjfYA2yaz6yMNhxl_FwDavwjQIomi_P-oRMUc0EjE2-OEANLa6nx2JBetqyTD58s2qb7lYXmCeChhqkKAAtJh3rlOUpOowbzERh9WK00V1uY0Y6Rmc4YurV2q-1i0RgA')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-0 p-6 w-full transform transition-transform group-hover:-translate-y-2">
-<h3 class="font-headline-sm text-white mb-2">الحلويات الغربية</h3>
-<p class="text-sm text-gold-light opacity-0 group-hover:opacity-100 transition-opacity">لمسات عصرية فاخرة</p>
-</div>
-</div>
-<!-- Category 3 -->
-<div class="group relative overflow-hidden rounded-xl h-96 cursor-pointer">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIBNBleCYFPBxJuM3Sy-bScb6i5K6IloMhod_iMvvbAvDfQk98Aj5Uk0AIklL-aHF0u5kIpahk2tBFEM59uAVUXzhoBvWgZgamIDbSgsz-FIB6kX4yecKlh90_SIdjtX6K3YQQxu5YCR3QrIQKSu3HWi-lihFch0Wahzw3dIaGiclKcSxSevL_U1Tcg7iMG_T0kIAke_a5nVdAXxqwfd9gb1bPWoIUYV27nzqKpXiFxcIwHuioAFSUlTKiMsY6w5N8jepD6tpPJg')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-0 p-6 w-full transform transition-transform group-hover:-translate-y-2">
-<h3 class="font-headline-sm text-white mb-2">المعجنات</h3>
-<p class="text-sm text-gold-light opacity-0 group-hover:opacity-100 transition-opacity">طازجة من الفرن يومياً</p>
-</div>
-</div>
-<!-- Category 4 -->
-<div class="group relative overflow-hidden rounded-xl h-96 cursor-pointer">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgebIAMap8MT-v9YEyQtkYUx5r9-p_DzAs2d92XSTZ7Nn8hapO9Fx3k8J35KxRC4MZK6BunOFIZSbtS1TB1rPRAy7vybOzpFq2zAHDdAdFFjmFWmYj_JJFn3MAl03LzR9Gszn12Hgpufylubr6JxyZMt5uhVhEWxBs4CMcRmMCU4ZDeu8cDddFEGp8bnWpiWbbTpvE0sIxkNgzCIIA7YXpsd9sLBRYxn3MMak2gRUUNQFpfh1TqLyzVU7uDxGlLpz98OnxKqX5rw')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
-<div class="absolute bottom-0 p-6 w-full transform transition-transform group-hover:-translate-y-2">
-<h3 class="font-headline-sm text-white mb-2">البيتزا</h3>
-<p class="text-sm text-gold-light opacity-0 group-hover:opacity-100 transition-opacity">عجينة إيطالية بلمسة شرقية</p>
-</div>
-</div>
-</div>
-<div class="mt-12 text-center reveal" style="transition-delay: 300ms">
-<button class="inline-flex items-center gap-4 border-2 border-gold-light text-gold-light px-10 py-4 rounded-lg font-label-md hover:bg-gold-light hover:text-primary transition-all duration-300">
-                القائمة الكاملة
-                <span class="material-symbols-outlined">restaurant_menu</span>
-</button>
-</div>
-</div>
-</section>
-<!-- Our Branches Section -->
-<section class="py-24 bg-surface-container-low" id="branches">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="flex justify-between items-end mb-16 reveal">
-<div>
-<span class="font-label-md text-gold-light tracking-widest block mb-2 uppercase">تفضلوا بزيارتنا</span>
-<h2 class="font-display-lg text-headline-md text-primary">فروعنا (Our Branches)</h2>
-</div>
-<div class="hidden md:block">
-<p class="text-on-surface-variant max-w-md text-left">نحن قريبون منك في أهم المواقع لضمان وصول نكهاتنا إليك أينما كنت.</p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Branch 1 -->
-<div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gold-light reveal" style="transition-delay: 100ms">
-<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary">location_on</span>
-</div>
-<h3 class="font-headline-sm text-primary mb-2">الفرع الرئيسي - دبا</h3>
-<p class="font-body-md text-on-surface-variant mb-4">المحلب، مقابل مسجد الشيخ زايد</p>
-<div class="space-y-3 mb-8">
-<div class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-gold-light text-sm">call</span>
-<span dir="ltr">09 244 2889</span>
-</div>
-</div>
-<button class="w-full flex items-center justify-center gap-2 border border-gold-light text-primary py-3 rounded-lg font-label-md hover:bg-gold-light hover:text-white transition-all">
-<span class="material-symbols-outlined">directions</span>
-                    الحصول على الاتجاهات
-                </button>
-</div>
-<!-- Branch 2 -->
-<div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gold-light reveal" style="transition-delay: 200ms">
-<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary">store</span>
-</div>
-<h3 class="font-headline-sm text-primary mb-2">فرع الرفاعة</h3>
-<p class="font-body-md text-on-surface-variant mb-4">خدمة سريعة وجودة لا تضاهى</p>
-<div class="space-y-3 mb-8">
-<div class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-gold-light text-sm">call</span>
-<span dir="ltr">052 680 8029</span>
-</div>
-</div>
-<button class="w-full flex items-center justify-center gap-2 border border-gold-light text-primary py-3 rounded-lg font-label-md hover:bg-gold-light hover:text-white transition-all">
-<span class="material-symbols-outlined">directions</span>
-                    الحصول على الاتجاهات
-                </button>
-</div>
-<!-- Branch 3 -->
-<div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gold-light reveal" style="transition-delay: 300ms">
-<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary">shop</span>
-</div>
-<h3 class="font-headline-sm text-primary mb-2">فرع مربح</h3>
-<p class="font-body-md text-on-surface-variant mb-4">في قلب المجتمع، نقدم لكم الأفضل</p>
-<div class="space-y-3 mb-8">
-<div class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-gold-light text-sm">call</span>
-<span dir="ltr">052 744 0118</span>
-</div>
-</div>
-<button class="w-full flex items-center justify-center gap-2 border border-gold-light text-primary py-3 rounded-lg font-label-md hover:bg-gold-light hover:text-white transition-all">
-<span class="material-symbols-outlined">directions</span>
-                    الحصول على الاتجاهات
-                </button>
-</div>
-</div>
-</div>
-</section>
-<!-- Social Media & Ordering Integrated Section -->
-<section class="py-16 bg-white border-y border-gold-light/10">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
-<h2 class="font-headline-sm text-primary mb-8">تواصلوا معنا عبر قنواتنا (Connect with Us)</h2>
-<div class="flex flex-wrap justify-center gap-8 items-center">
-<a class="group flex flex-col items-center gap-2 transition-transform hover:scale-110" href="https://wa.me/971507082056" target="_blank">
-<div class="w-14 h-14 rounded-full border-2 border-gold-light flex items-center justify-center text-primary group-hover:bg-gold-light group-hover:text-white transition-all shadow-md">
-<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.222-4.032c1.503.893 3.129 1.364 4.799 1.365 5.228 0 9.482-4.254 9.484-9.483 0-2.535-1.002-4.912-2.783-6.694-1.78-1.783-4.15-2.785-6.689-2.787-5.232 0-9.482 4.254-9.484 9.483-.001 1.738.453 3.426 1.326 4.937l-1.026 3.746 3.847-.987zm11.233-7.531c-.301-.151-1.784-.881-2.06-.982-.276-.1-.478-.151-.68.151-.202.301-.779.982-.955 1.183-.176.201-.351.226-.653.076-.301-.151-1.272-.469-2.424-1.496-.897-.8-1.503-1.788-1.679-2.09-.176-.301-.019-.464.131-.614.136-.134.301-.351.453-.526.151-.176.202-.301.301-.502.1-.201.05-.376-.025-.526-.075-.151-.68-1.636-.932-2.239-.245-.589-.494-.509-.68-.518-.176-.009-.378-.011-.58-.011-.202 0-.529.076-.806.376-.276.301-1.056 1.031-1.056 2.512s1.081 2.912 1.232 3.113c.151.201 2.128 3.248 5.156 4.555.72.311 1.282.497 1.721.636.722.23 1.379.197 1.898.12.578-.085 1.784-.729 2.036-1.433.251-.704.251-1.307.176-1.433-.075-.126-.276-.201-.578-.352z"></path></svg>
-</div>
-<span class="font-label-sm text-primary uppercase">WhatsApp</span>
-</a>
-<a class="group flex flex-col items-center gap-2 transition-transform hover:scale-110" href="https://www.instagram.com/anwarlebanon_bakery?igsh=MXRrbWsxZ3RvdzJzaw==" target="_blank">
-<div class="w-14 h-14 rounded-full border-2 border-gold-light flex items-center justify-center text-primary group-hover:bg-gold-light group-hover:text-white transition-all shadow-md">
-<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
-</div>
-<span class="font-label-sm text-primary uppercase">Instagram</span>
-</a>
-<a class="group flex flex-col items-center gap-2 transition-transform hover:scale-110" href="https://www.facebook.com/share/1Ee7cBoCCr/" target="_blank">
-<div class="w-14 h-14 rounded-full border-2 border-gold-light flex items-center justify-center text-primary group-hover:bg-gold-light group-hover:text-white transition-all shadow-md">
-<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
-</div>
-<span class="font-label-sm text-primary uppercase">Facebook</span>
-</a>
-<a class="group flex flex-col items-center gap-2 transition-transform hover:scale-110" href="https://www.tiktok.com/@anwarlebanon?_r=1&amp;_t=ZS-96f4ngj321M" target="_blank">
-<div class="w-14 h-14 rounded-full border-2 border-gold-light flex items-center justify-center text-primary group-hover:bg-gold-light group-hover:text-white transition-all shadow-md">
-<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.9-.23-2.74.28-.73.45-1.22 1.25-1.3 2.1-.04.42-.04.84.06 1.25.13.87.69 1.63 1.48 2.01.66.33 1.4.36 2.12.18.99-.25 1.79-1.08 2-2.08.08-.46.1-1.05.09-1.57.01-5.06-.01-10.12.02-15.18z"></path></svg>
-</div>
-<span class="font-label-sm text-primary uppercase">TikTok</span>
-</a>
-<a class="group flex flex-col items-center gap-2 transition-transform hover:scale-110" href="https://www.talabat.com/ar/uae/restaurant/788269/anwar-lebanon-bakery-and-sweets-qidfa?aid=3899" target="_blank">
-<div class="w-14 h-14 rounded-full bg-primary border-2 border-gold-light flex items-center justify-center text-gold-light group-hover:bg-gold-light group-hover:text-primary transition-all shadow-md">
-<span class="material-symbols-outlined text-3xl">shopping_cart</span>
-</div>
-<span class="font-label-sm text-primary uppercase">Talabat اطلب الآن</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Contact Us Section -->
-<section class="py-24 relative" id="contact">
-<div class="absolute inset-0 z-0">
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJD2X2GfoxjpHlE-4-ZYLJnC-tgh8RiI7BCmamiFGPP_7zhYGWP9GJVZoQBZXwPsMYT4BvUxVus3Hix3e1pXZ7pk_izT4beFSaKXwQzGKX6B-N9GSbxBiEGK1oht0fI50aH9FXIVOff-Z95OsOHbXRUMBLt0A3m5VBs38UyU6Ov_YnCRRTnQUMF4sfHde5EOce_RucrrivsplwiRfNQYigXch6_1zADzUN3ybwj8t9Who6BWAmfCfdd0wumq8GmU5ltiyls3-mMg')"></div>
-<div class="absolute inset-0 bg-primary/95"></div>
-</div>
-<div class="max-w-4xl mx-auto px-margin-mobile relative z-10 text-center">
-<h2 class="font-display-lg text-headline-md text-white mb-4">اتصل بنا (Contact Us)</h2>
-<p class="font-body-lg text-on-primary-container mb-12">يسعدنا سماع استفساراتكم وملاحظاتكم. فريقنا دائماً في خدمتكم.</p>
-<form class="grid grid-cols-1 md:grid-cols-2 gap-6 text-right">
-<div class="reveal">
-<label class="block font-label-md text-gold-light mb-2">الاسم الكامل</label>
-<input class="w-full bg-white/5 border border-white/20 rounded-lg p-4 text-white placeholder-white/30 focus:border-gold-light focus:ring-0 transition-all" placeholder="أدخل اسمك هنا" type="text"/>
-</div>
-<div class="reveal" style="transition-delay: 100ms">
-<label class="block font-label-md text-gold-light mb-2">رقم الهاتف</label>
-<input class="w-full bg-white/5 border border-white/20 rounded-lg p-4 text-white placeholder-white/30 focus:border-gold-light focus:ring-0 transition-all" placeholder="05x xxx xxxx" type="tel"/>
-</div>
-<div class="md:col-span-2 reveal" style="transition-delay: 200ms">
-<label class="block font-label-md text-gold-light mb-2">رسالتك</label>
-<textarea class="w-full bg-white/5 border border-white/20 rounded-lg p-4 text-white placeholder-white/30 focus:border-gold-light focus:ring-0 transition-all" placeholder="كيف يمكننا مساعدتك؟" rows="4"></textarea>
-</div>
-<div class="md:col-span-2 text-center mt-6 reveal" style="transition-delay: 300ms">
-<button class="bg-gold-light text-primary px-16 py-4 rounded-lg font-label-md font-bold hover:bg-white hover:scale-105 transition-all shadow-xl">
-                    إرسال الرسالة
-                </button>
-</div>
-</form>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-surface-container-highest dark:bg-inverse-surface w-full rounded-t-xl border-t border-border-subtle">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-gutter py-stack-lg max-w-container-max mx-auto">
-<div class="col-span-1 md:col-span-1">
-<div class="font-display-hero-en text-headline-lg text-primary-container dark:text-primary-fixed mb-4">Anwar Lebanon</div>
-<p class="font-body-md text-on-surface-variant">© 2024 أنوار لبنان. صُنع بكل فخر منذ 1985.</p>
-<div class="flex gap-4 mt-6">
-<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-gold-light hover:text-white transition-all text-primary" href="https://www.facebook.com/share/1Ee7cBoCCr/" target="_blank">
-<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
-</a>
-<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-gold-light hover:text-white transition-all text-primary" href="https://www.instagram.com/anwarlebanon_bakery?igsh=MXRrbWsxZ3RvdzJzaw==" target="_blank">
-<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
-</a>
-</div>
-</div>
-<div class="col-span-1">
-<h4 class="font-label-md text-primary mb-6">روابط سريعة</h4>
-<ul class="space-y-3">
-<li><a class="font-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all inline-block" href="#">سياسة الخصوصية</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all inline-block" href="#">شروط الخدمة</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all inline-block" href="#">معلومات الشحن</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all inline-block" href="#">الوظائف</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h4 class="font-label-md text-primary mb-6">فروعنا</h4>
-<ul class="space-y-3">
-<li class="font-body-md text-on-surface-variant">دبا (الرئيسي)</li>
-<li class="font-body-md text-on-surface-variant">الرفاعة</li>
-<li class="font-body-md text-on-surface-variant">مربح</li>
-</ul>
-</div>
-<div class="col-span-1">
-<h4 class="font-label-md text-primary mb-6">النشرة الإخبارية</h4>
-<p class="font-body-md text-on-surface-variant mb-4">انضم إلينا للحصول على عروض التراث الحصرية.</p>
-<div class="flex">
-<input class="bg-white border-outline rounded-r-lg w-full px-4 focus:ring-gold-light" placeholder="البريد الإلكتروني" type="email"/>
-<button class="bg-primary text-white px-4 py-2 rounded-l-lg hover:bg-primary-container transition-colors whitespace-nowrap">اشتراك</button>
-</div>
-</div>
-</div>
-</footer>
+
 <script>
-    // Simple Intersection Observer for reveal animations
-    const observerOptions = {
-        threshold: 0.1
-    };
+/* ── Hero nav dropdown ── */
+function toggleHeroMenu() {
+  document.getElementById('heroNavDropdown').classList.toggle('open');
+}
+function closeHeroMenu() {
+  document.getElementById('heroNavDropdown').classList.remove('open');
+}
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
-        });
-    }, observerOptions);
+/* ── Status badge ── */
+function updateStatus() {
+  const now = new Date();
+  const uae = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Dubai' }));
+  const mins = uae.getHours() * 60 + uae.getMinutes();
+  const isOpen = mins >= 360 && mins < 1440;
+  const badge = document.getElementById('statusBadge');
+  const text  = document.getElementById('statusText');
+  if (isOpen) {
+    badge.className = 'status-badge open';
+    const left = 1440 - mins;
+    text.textContent = left <= 60 ? `مفتوح الآن · يغلق بعد ${left} دقيقة` : 'مفتوح الآن · 6ص – 12م';
+  } else {
+    badge.className = 'status-badge closed';
+    text.textContent = 'مغلق حالياً · يفتح الساعة 6 صباحاً';
+  }
+}
+updateStatus(); setInterval(updateStatus, 60000);
 
-    document.querySelectorAll('.reveal').forEach((el) => {
-        observer.observe(el);
-    });
+/* ── Smart image loader: adds img-loaded class + handles errors ── */
+function setupImageLoading(img, fallback) {
+  const done = () => img.classList.add('img-loaded');
+  const fail = () => {
+    if (img.src !== fallback) {
+      img.src = fallback;
+    }
+    img.classList.add('img-loaded');
+  };
+  if (img.complete && img.naturalWidth > 0) {
+    done();
+  } else if (img.complete) {
+    fail();
+  } else {
+    img.addEventListener('load',  done, { once: true });
+    img.addEventListener('error', fail, { once: true });
+  }
+}
 
-    // Add sticky header logic
-    window.addEventListener('scroll', () => {
-        const nav = document.querySelector('nav');
-        if (window.scrollY > 50) {
-            nav.classList.add('shadow-md');
-        } else {
-            nav.classList.remove('shadow-md');
-        }
-    });
+// Apply to static images already in DOM
+document.addEventListener('DOMContentLoaded', () => {
+  const catFallback = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='260' viewBox='0 0 400 260'%3E%3Crect width='400' height='260' fill='%23E3EDE7'/%3E%3Ccircle cx='200' cy='110' r='40' fill='%231F7A55' opacity='0.3'/%3E%3Ctext x='200' y='165' text-anchor='middle' font-family='sans-serif' font-size='13' fill='%233D6B58'%3Eلا توجد صورة%3C/text%3E%3C/svg%3E";
+  document.querySelectorAll('.cat-img, .inner-banner').forEach(img => {
+    setupImageLoading(img, catFallback);
+  });
+});
+
+/* ── Fade in ── */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('mainContainer').classList.add('visible');
+    const hero = document.getElementById('mainHero');
+    if(hero) hero.classList.add('loaded');
+  }, 80);
+});
+
+/* ── Share ── */
+function shareLink() {
+  const url = window.location.href;
+  if (navigator.share) {
+    navigator.share({ title: 'أنوار لبنان', url }).catch(()=>{});
+  } else {
+    navigator.clipboard.writeText(url).then(() => {
+      const t = document.getElementById('shareToast');
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }).catch(() => { prompt('انسخ الرابط:', url); });
+  }
+}
+
+/* ── Page navigation ── */
+function showMenu() {
+  document.getElementById('page-main').classList.remove('active');
+  document.getElementById('page-menu').classList.add('active');
+  window.scrollTo(0, 0);
+}
+function hideMenu() {
+  document.getElementById('page-menu').classList.remove('active');
+  document.getElementById('page-main').classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+/* ── Menu categories data ── */
+const categories = {
+  oriental:{
+    name:'الحلويات الشرقية', emoji:'🍯',
+    banner:'https://i.ibb.co/SDRmyqb2/f74c473db15d9fd47e73b3c2b036a0bf.jpg',
+    tag:'حلويات أصيلة من قلب الشام',
+    items:[
+      {name:'بقلاوة تركية',        img:'https://i.ibb.co/ycjqyhpQ/FB-IMG-1779778686523.jpg'},
+      {name:'بوكس بقلاوة مشكل',    img:'https://i.ibb.co/kVkdPrpY/FB-IMG-1779778739654.jpg', sizes:['0.5 كيلو','1 كيلو']},
+      {name:'معمول',               img:'https://i.ibb.co/S7VDScQx/FB-IMG-1779778781318.jpg', flavors:['فستق حلبي','جوز','تمر']},
+      {name:'برازق',               img:'https://i.ibb.co/Jwg4K95K/FB-IMG-1779778831723.jpg'},
+      {name:'غريبة',               img:'https://i.ibb.co/MkdhRTsx/FB-IMG-1779778858559.jpg'},
+      {name:'صحن بلح شام',         img:'https://i.ibb.co/2YL5Sk0r/FB-IMG-1779778879008.jpg'},
+      {name:'كنافة',               img:'https://i.ibb.co/twkWsCZv/8f851a88ead5b6b5eac507ab0bac1ede.jpg'},
+      {name:'أصابع زينب',          img:'https://i.ibb.co/bRWWKKgz/f438f73c30813df3993466f02d0f915d-1.jpg'},
+      {name:'مشبك سوري',           img:'https://i.ibb.co/zTrbbX7G/323ec12440da9cdb19a39d14a603e946.jpg'},
+      {name:'صحن عش البلبل', price:21, img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779778904036.jpg'},
+      {name:'صحن هريسة',     price:17, img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779778895475.jpg'},
+      {name:'بقلاوة',              img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779778928897.jpg'},
+    ]
+  },
+  western:{
+    name:'الحلويات الغربية', emoji:'🎂',
+    banner:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779780950169.jpg',
+    tag:'حلويات غربية فاخرة',
+    items:[
+      {name:'قوالب الكيك',   img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/file_0000000098e07246b85889f4572fddac.png', note:'نصنع أي شكل تريده'},
+      {name:'قطعة الكيك',    img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/Screenshot_20260526_102946_Facebook.jpg'},
+      {name:'إسبانية',       img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779778941151.jpg'},
+      {name:'كاسات الكريمة', img:'https://i.ibb.co/TVbs7xL/FB-IMG-1779781055642.jpg', flavors:['بيستاشيو','كاسترد','لوتس','نوتيلا']},
+      {name:'كاسات الجيلي',  img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779781314818.jpg'},
+    ]
+  },
+  pastry:{
+    name:'فطائر ومعجنات', emoji:'🥐',
+    banner:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/b5172deb3ad4c5f14079df067bb62d6c.jpg',
+    tag:'طازجة يومياً من الفرن',
+    items:[
+      {name:'مناقيش', img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782200762.jpg', wide:true,
+        manaeshTypes:['جبن','زعتر','جبن حلوم','جبن زيتون','لبنة زعتر','جبن سبايسي','لبنة فلافل','لبنة فيتا','سبانخ','بطاطا','مكس أجبان']},
+      {name:'محمرة',         img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782453293.jpg'},
+      {name:'دواري',         img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782457748.jpg'},
+      {name:'فطائر',         img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782472122.jpg'},
+      {name:'فطير مشلتت',    img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779783656876.jpg'},
+      {name:'خبز لبناني',    img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782460575.jpg'},
+      {name:'صمون عادي',     img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782476341.jpg'},
+      {name:'صمون بالحليب',  img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782468075.jpg'},
+      {name:'توست ناشف',     img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782470243.jpg'},
+      {name:'سلايس',         img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782478386.jpg'},
+      {name:'كعك',           img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782481692.jpg'},
+    ]
+  },
+  mixed:{
+    name:'فطاير مشكل', emoji:'🥧',
+    banner:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782411715.jpg',
+    tag:'تشكيلة مميزة لكل الأذواق',
+    items:[
+      {name:'صحن فطائر مشكل', img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782411715.jpg'},
+      {name:'فطير مشلتت',     img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779783656876.jpg', tall:true,
+        flavors:['مكس أجبان','جبن كرافت مع عسل','لحم','دجاج','سادة','لبنة فلافل','لبنة زعتر','جبن فيتا','نقانق + جبن','قشطة عسل','مكس لحوم']},
+      {name:'خلية النحل',     img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779782442367.jpg'},
+    ]
+  },
+  pizza:{
+    name:'البيتزا', emoji:'🍕',
+    banner:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/file_0000000046c072468e8ffdc10da83e64.png',
+    tag:'بيتزا طازجة من الفرن',
+    items:[
+      {name:'بيتزا',           img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779783336509.jpg',
+        flavors:['دجاج','لحم','ميكس لحوم','نقانق + جبن','خضار']},
+      {name:'بيتزا مكس أجبان', img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779783464447.jpg',
+        flavors:['حلوم + موزاريلا + كرافت']},
+      {name:'بيتزا ميني',      img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779783052148.jpg'},
+      {name:'بيتزا وسط',       img:'https://raw.githubusercontent.com/anwarlebanonbakery/bakery-images/main/FB_IMG_1779783106733.jpg'},
+    ]
+  }
+};
+
+// SVG placeholder - no external dependency, always works
+const fallbackImg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23F5FAF7'/%3E%3Ccircle cx='200' cy='120' r='45' fill='%23E3EDE7'/%3E%3Cpath d='M178 108 Q200 85 222 108 Q240 130 222 148 Q200 165 178 148 Q160 130 178 108Z' fill='%231F7A55' opacity='0.4'/%3E%3Cpath d='M190 118 L200 108 L210 118 L206 132 L194 132Z' fill='%23145C40' opacity='0.5'/%3E%3Ctext x='200' y='195' text-anchor='middle' font-family='sans-serif' font-size='14' fill='%233D6B58'%3Eالصورة غير متاحة%3C/text%3E%3C/svg%3E";
+
+function buildPriceHTML(item){
+  if(item.price !== undefined)
+    return `<div class="prod-price"><span class="prod-currency">AED </span>${item.price}</div>`;
+  return `<div class="prod-price dash">—</div>`;
+}
+function buildBadgeHTML(item){
+  if(item.price !== undefined)
+    return `<div class="prod-badge">${item.price} AED</div>`;
+  return `<div class="prod-badge no-price">—</div>`;
+}
+
+function openCategory(key){
+  const cat = categories[key];
+  document.getElementById('inner-emoji').textContent = cat.emoji;
+  document.getElementById('inner-title').textContent = cat.name;
+  document.getElementById('inner-banner').src = cat.banner;
+  document.getElementById('inner-tag').textContent = cat.tag;
+  const grid = document.getElementById('products-grid');
+  grid.innerHTML = '';
+  cat.items.forEach((item,i)=>{
+    const card = document.createElement('div');
+    card.className = 'prod-card'+(item.wide?' wide':'')+(item.tall?' tall':'');
+    let extras = '';
+    if(item.sizes)
+      extras += `<div class="prod-sizes">${item.sizes.map(s=>`<span class="prod-size-chip">${s}</span>`).join('')}</div>`;
+    if(item.flavors)
+      extras += `<div class="prod-flavors">${item.flavors.map(f=>`<span class="prod-flavor-chip">${f}</span>`).join('')}</div>`;
+    if(item.note)
+      extras += `<div class="prod-note">${item.note}</div>`;
+    let manaesh = '';
+    if(item.manaeshTypes)
+      manaesh = `<div class="manaesh-types">${item.manaeshTypes.map(t=>`<span class="manaesh-chip">${t}</span>`).join('')}</div>`;
+    card.innerHTML=`
+      <div class="prod-img-wrap">
+        <img class="prod-img" src="${item.img}" alt="${item.name}" loading="lazy"
+          onerror="this.src='${fallbackImg}';this.classList.add('img-loaded');"
+          onload="this.classList.add('img-loaded');"/>
+        ${buildBadgeHTML(item)}
+      </div>
+      <div class="prod-body">
+        <div>
+          <div class="prod-name">${item.name}</div>
+          ${extras}${manaesh}
+        </div>
+        <div class="prod-price-row">
+          ${buildPriceHTML(item)}
+          <div class="prod-heart">🤍</div>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+    setTimeout(()=>card.classList.add('show'), 60+i*55);
+  });
+  document.getElementById('view-home').classList.remove('active');
+  document.getElementById('view-inner').classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function goHome(){
+  document.getElementById('view-inner').classList.remove('active');
+  document.getElementById('view-home').classList.add('active');
+  window.scrollTo(0, 0);
+}
 </script>
-</body></html>
+
+<!-- ══ FALLING LEAVES ══ -->
+<canvas id="leaves-canvas"></canvas>
+
+<script>
+(function(){
+  const canvas = document.getElementById('leaves-canvas');
+  const ctx    = canvas.getContext('2d');
+  let W, H, leaves = [], running = true;
+
+  const COLORS = ['#1F7A55','#4CAF7D','#003527','#8FE3C0','#2E7D5B'];
+  const COUNT  = 10;
+
+  function resize(){ W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  window.addEventListener('resize', resize);
+  resize();
+
+  function randBetween(a,b){ return a + Math.random()*(b-a); }
+
+  function createLeaf(fromTop){
+    const x = fromTop ? randBetween(0, W) : randBetween(-40, W+40);
+    return {
+      x,
+      y       : fromTop ? randBetween(-80, -10) : randBetween(-80, -10),
+      size    : randBetween(8, 18),
+      color   : COLORS[Math.floor(Math.random()*COLORS.length)],
+      speedY  : randBetween(0.5, 1.3),
+      speedX  : randBetween(-0.6, 0.6),
+      angle   : randBetween(0, Math.PI*2),
+      spin    : randBetween(-0.03, 0.03),
+      sway    : randBetween(0.3, 0.8),
+      swayOff : randBetween(0, Math.PI*2),
+      opacity : randBetween(0.55, 0.92),
+      dead    : false
+    };
+  }
+
+  function drawLeaf(l){
+    ctx.save();
+    ctx.globalAlpha = l.opacity;
+    ctx.translate(l.x, l.y);
+    ctx.rotate(l.angle);
+    ctx.fillStyle = l.color;
+    ctx.beginPath();
+    // simple leaf shape
+    ctx.moveTo(0, -l.size);
+    ctx.bezierCurveTo( l.size*0.9,  -l.size*0.5,  l.size*1.1,  l.size*0.5,  0,  l.size);
+    ctx.bezierCurveTo(-l.size*1.1,  l.size*0.5,  -l.size*0.9, -l.size*0.5,  0, -l.size);
+    ctx.fill();
+    // midrib
+    ctx.strokeStyle = 'rgba(0,0,0,0.12)';
+    ctx.lineWidth = 0.7;
+    ctx.beginPath();
+    ctx.moveTo(0, -l.size*0.9);
+    ctx.lineTo(0,  l.size*0.9);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  // init
+  for(let i=0;i<COUNT;i++){
+    const l = createLeaf(true);
+    l.y = randBetween(-300, H); // scatter vertically on first load
+    leaves.push(l);
+  }
+
+  let frame = 0;
+  function animate(){
+    if(!running) return;
+    ctx.clearRect(0,0,W,H);
+    frame++;
+    leaves.forEach((l,i)=>{
+      l.y     += l.speedY;
+      l.x     += l.speedX + Math.sin(frame*0.012 + l.swayOff) * l.sway;
+      l.angle += l.spin;
+      if(l.y > H + 30) l.dead = true;
+      if(!l.dead) drawLeaf(l);
+    });
+    // remove dead, add fresh only for first 8 seconds
+    leaves = leaves.filter(l => !l.dead);
+    if(frame < 900 && leaves.length < COUNT){  // ~15s at 60fps
+      leaves.push(createLeaf(false));
+    }
+    // keep going while leaves exist, stop after all gone
+    if(leaves.length > 0 || frame < 900){
+      requestAnimationFrame(animate);
+    } else {
+      running = false;
+    }
+  }
+  animate();
+})();
+</script>
+
+
+</body>
+</html>
