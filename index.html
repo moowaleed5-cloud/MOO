@@ -87,24 +87,28 @@ body {
 .main-hero-section::after {
   content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none;
   background: linear-gradient(
-    to right,
-    rgba(0,53,39,0.55) 0%,
-    rgba(0,53,39,0.72) 40%,
-    rgba(0,53,39,0.90) 75%,
-    rgba(0,53,39,0.96) 100%
-  ),
-  linear-gradient(
     to top,
-    rgba(0,53,39,0.35) 0%,
-    rgba(0,53,39,0.0) 45%
+    rgba(0,53,39,0.55) 0%,
+    rgba(0,53,39,0.15) 55%,
+    rgba(0,53,39,0.35) 100%
   );
 }
+.main-hero-bg { filter: brightness(0.88) saturate(1.05); }
 .main-hero-section { height: 68vw; min-height: 300px; max-height: 380px; }
 /* ── New hero content block: green/gold identity, right-aligned (RTL) ── */
 .hero-content-new {
   position: absolute; z-index: 3; inset: 0;
   display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end;
-  padding: 16px 18px 20px; text-align: right;
+  padding: 16px; text-align: right;
+}
+.hero-glass-card {
+  background: rgba(0,53,39,0.60);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 22px;
+  padding: 18px 20px 20px;
+  max-width: 380px; width: 100%;
+  box-shadow: 0 10px 34px rgba(0,0,0,0.28);
 }
 .hero-heading-new {
   font-family: 'IBM Plex Sans Arabic', 'Cairo', sans-serif; font-weight: 700; color: #FFFFFF;
@@ -114,7 +118,7 @@ body {
 .hero-heading-new .accent-gold { color: var(--hero-gold); }
 .hero-desc-new {
   font-family: 'Source Sans 3', sans-serif; font-size: 12.5px; line-height: 1.6;
-  color: rgba(255,255,255,0.90); margin-bottom: 14px; max-width: 340px;
+  color: rgba(255,255,255,0.90); margin-bottom: 14px; max-width: 100%;
   border-right: 3px solid var(--hero-gold); padding-right: 12px;
 }
 .hero-btns-new { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; width: 100%; }
@@ -162,7 +166,7 @@ body {
   border-top: 1px solid #EEE;
 }
 /* status badge sits inline at the top of the new hero content, glass pill kept from base style */
-.hero-content-new .status-badge { margin-bottom: 10px; margin-top: 0; }
+.hero-content-new .status-badge { margin-bottom: 12px; margin-top: 0; }
 
 /* ── Identity block sits centered in hero (legacy, unused by new markup) ── */
 .main-hero-content {
@@ -758,15 +762,17 @@ body {
     <div class="main-hero-section" id="mainHero">
       <div class="main-hero-bg"></div>
       <div class="hero-content-new">
-        <div id="statusBadge" class="status-badge">
-          <span class="status-dot"></span>
-          <span id="statusText"></span>
-        </div>
-        <h1 class="hero-heading-new">أنوار لبنان..<br><span class="accent-gold">فن الأصالة</span> منذ 1985</h1>
-        <p class="hero-desc-new">أكثر من 41 عاماً من الإبداع في عالم الحلويات والمخبوزات. نقدم لكم طعم التراث اللبناني العريق بلمسة عصرية فاخرة.</p>
-        <div class="hero-btns-new">
-          <button class="hero-btn-outline" onclick="document.querySelector('.links-section').scrollIntoView({behavior:'smooth'})">قصتنا</button>
-          <button class="hero-btn-gold" onclick="showMenu()">استكشف القائمة</button>
+        <div class="hero-glass-card">
+          <div id="statusBadge" class="status-badge">
+            <span class="status-dot"></span>
+            <span id="statusText"></span>
+          </div>
+          <h1 class="hero-heading-new">أنوار لبنان..<br><span class="accent-gold">فن الأصالة</span> منذ 1985</h1>
+          <p class="hero-desc-new">أكثر من 41 عاماً من الإبداع في عالم الحلويات والمخبوزات. نقدم لكم طعم التراث اللبناني العريق بلمسة عصرية فاخرة.</p>
+          <div class="hero-btns-new">
+            <button class="hero-btn-outline" onclick="document.querySelector('.links-section').scrollIntoView({behavior:'smooth'})">قصتنا</button>
+            <button class="hero-btn-gold" onclick="showMenu()">استكشف القائمة</button>
+          </div>
         </div>
       </div>
     </div>
@@ -1230,93 +1236,8 @@ function goHome(){
 <canvas id="leaves-canvas"></canvas>
 
 <script>
-(function(){
-  const canvas = document.getElementById('leaves-canvas');
-  const ctx    = canvas.getContext('2d');
-  let W, H, leaves = [], running = true;
-
-  const COLORS = ['#1F7A55','#4CAF7D','#003527','#8FE3C0','#2E7D5B'];
-  const COUNT  = 5;
-
-  function resize(){ W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
-  window.addEventListener('resize', resize);
-  resize();
-
-  function randBetween(a,b){ return a + Math.random()*(b-a); }
-
-  function createLeaf(fromTop){
-    const x = fromTop ? randBetween(0, W) : randBetween(-40, W+40);
-    return {
-      x,
-      y       : fromTop ? randBetween(-80, -10) : randBetween(-80, -10),
-      size    : randBetween(5, 9),
-      color   : COLORS[Math.floor(Math.random()*COLORS.length)],
-      speedY  : randBetween(0.5, 1.3),
-      speedX  : randBetween(-0.6, 0.6),
-      angle   : randBetween(0, Math.PI*2),
-      spin    : randBetween(-0.03, 0.03),
-      sway    : randBetween(0.3, 0.8),
-      swayOff : randBetween(0, Math.PI*2),
-      opacity : randBetween(0.2, 0.4),
-      dead    : false
-    };
-  }
-
-  function drawLeaf(l){
-    ctx.save();
-    ctx.globalAlpha = l.opacity;
-    ctx.translate(l.x, l.y);
-    ctx.rotate(l.angle);
-    ctx.fillStyle = l.color;
-    ctx.beginPath();
-    // simple leaf shape
-    ctx.moveTo(0, -l.size);
-    ctx.bezierCurveTo( l.size*0.9,  -l.size*0.5,  l.size*1.1,  l.size*0.5,  0,  l.size);
-    ctx.bezierCurveTo(-l.size*1.1,  l.size*0.5,  -l.size*0.9, -l.size*0.5,  0, -l.size);
-    ctx.fill();
-    // midrib
-    ctx.strokeStyle = 'rgba(0,0,0,0.12)';
-    ctx.lineWidth = 0.7;
-    ctx.beginPath();
-    ctx.moveTo(0, -l.size*0.9);
-    ctx.lineTo(0,  l.size*0.9);
-    ctx.stroke();
-    ctx.restore();
-  }
-
-  // init
-  for(let i=0;i<COUNT;i++){
-    const l = createLeaf(true);
-    l.y = randBetween(-300, H); // scatter vertically on first load
-    leaves.push(l);
-  }
-
-  let frame = 0;
-  function animate(){
-    if(!running) return;
-    ctx.clearRect(0,0,W,H);
-    frame++;
-    leaves.forEach((l,i)=>{
-      l.y     += l.speedY;
-      l.x     += l.speedX + Math.sin(frame*0.012 + l.swayOff) * l.sway;
-      l.angle += l.spin;
-      if(l.y > H + 30) l.dead = true;
-      if(!l.dead) drawLeaf(l);
-    });
-    // remove dead, add fresh only for first 8 seconds
-    leaves = leaves.filter(l => !l.dead);
-    if(frame < 900 && leaves.length < COUNT){  // ~15s at 60fps
-      leaves.push(createLeaf(false));
-    }
-    // keep going while leaves exist, stop after all gone
-    if(leaves.length > 0 || frame < 900){
-      requestAnimationFrame(animate);
-    } else {
-      running = false;
-    }
-  }
-  animate();
-})();
+// Falling leaves effect disabled for a cleaner, more professional look.
+// To re-enable, restore the animation logic below.
 </script>
 
 
